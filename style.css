@@ -1,4 +1,126 @@
-html, body {
+*{
+  margin: 0;
+  
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+header{
+  min-height: 50vh;
+  background-color: gray;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-text{
+  text-align: center;
+  color: white;
+}
+
+.header-text p {
+  font-size: 1.5rem;
+}
+
+header#home {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header#home video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header#home .container {
+  position: relative;
+  z-index: 2;
+}
+
+header#home .video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
+/*   background-color: black; */
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.text-overlay { 
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  
+  
+  
+}
+/* Media Query for devices with coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header#home {
+    background: url('img/home.jpg') black no-repeat center center scroll;
+  }
+
+  header#home video {
+    display: none;
+  }
+}
+
+header#about{
+ background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/about.jpg");
+}
+header#services{
+ background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/services.jpg");
+
+
+}header#shop{
+ background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/shop.jpg");
+  
+}
+header#contact{
+ background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("img/contact.jpg");
+  
+}
+
+.display-1, 
+.display-2, 
+.display-3, 
+.display-4, 
+.display-5, 
+.display-6 {
+    font-family: 'Great Vibes', cursive;
+  text-transform: none;
+}
+
+section{
+  min-height: 50vh;
+  padding: 4rem;
+}
+
+
+.bg-brand-light {
+  background-color: #efefef;
+  color: #495454;
 }

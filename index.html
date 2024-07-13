@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project Title</title>
+    <title>HOME|KAYLEE'S FLOWERS</title>
+<!--     GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> 
 <!--     BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 <!--     BOOTSTRAP CSS -->
@@ -15,37 +19,94 @@
 <!--     NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">david</a>
+    <a class="navbar-brand link-info" href="index.html">Kaylee's Flowers</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         
-        <a class="nav-link" href="shop.html">About</a>
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
         <a class="nav-link" href="services.html">Services</a>
         <a class="nav-link" href="shop.html">Shop</a>
+        <a class="nav-link" href="more facts.html">More Facts</a>
         <a class="nav-link" href="contact.html">Contact</a>
       </div>
     </div>
   </div>
 </nav>
-<!-- HEADER -->
-    <header class="d-display">
-      <div class="p-5 mb-4 bg-light rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Kaylee's Flowers</h1>
-        <p class="col-md-8 fs-4">We specialize in providing services for residential and corporate flowers, interiors, garden, events, and weddings.</p>
-        <a class="btn btn-primary" href="shop.html">Shop now</a>
+
+    <header id="home">
+
+  <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+  <div class="video-overlay"></div>
+
+  <!-- The HTML5 video element that will create the background video on the header -->
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <source src="videos/video_1.mp4" type="video/mp4">
+  </video>
+
+  <!-- The header text -->
+  <div class="container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white text-overlay">
+<!--         <h1 class="display-3">Video Header</h1> -->
+                <h1 class="display-1 text-light mb-4 fw-bold">Kaylee's Flowers</h1>
+        <p id="header-home" class="fs-1 mb-4">Kaylee's Flowers specializes in beautiful floral arrangements and great customer service. Send flowers to your loved ones with Kaylee's Flowers.</p>
+                <a class="btn btn-info" href="shop.html">Shop now</a>
       </div>
     </div>
-    </header>
+  </div>
+</header>
     <main>
-      
+      <section class="bg-primary text-light text-center p-5">
+        <div class="container">
+        <h2 class="display-3 my-4 text-info"> Flowers for any occasion</h2>
+        <p class="lead">Kaylee's Flowers specializes in unique and beautiful floral arrangements. At Kaylee's, we provide customers around with an online marketplace of beautiful bouquets, long-lasting plants, and gourmet gift baskets.</p>
+        </div>
+      </section>
+            <section class="bg-brand-light p-5">
+        <div class="container">
+        <h2 class="display-3 my-4 text-center text-info">Who We Work With</h2>
+          <div class="row p-5">
+<!--             PARTNER  -->
+            <div class="col-sm-3 col-md-6 col-lg-3 ">
+  <img src="img/partner_1.jpg" alt="Logo for the California Association of Flower Growers & Shippers (CalFlowers)" class="img-fluid"/>
+              <h3 class="mt-3">CalFlowers</h3>
+              <p class="fs-6 text-start">Kaylee's Flowers is an active member of CalFlowers. Lately, we've used our membership to promote consumer access to fresh and safe flower products.</p>
+              <br/>
+            </div>
+<!--             PARTNER -->
+                <div class="col-sm-3 col-md-6 col-lg-3 ">
+             
+  <img src="img/partner_2.png" alt="Logo for California Poppy Festival" class="img-fluid"/>
+              <h3 class="mt-3">California Poppy Festival</h3>
+              <p class="fs-6 text-start">We're a proud sponsor of the California Poppy Festival. We invite you to stop by our table this year.</p>
+            <br/>
+            </div>
+<!--             PARTNER -->
+                <div class="col-sm-3 col-md-6 col-lg-3 ">
+       <img src="img/partner_3.jpg" class="img-fluid" alt="Logo for University of California Health" class="img-fluid"/>
+              <h3 class="mt-3">University of California Health</h3>
+              <p class="fs-6 text-start">Every year, our team transforms UC Health hospital lobbies with thousands of stunning flowers & lush plants which visitors can purchase onsite. KF donates $1 of every purchase to UC Davis Children’s Hospital.</p>
+                  <br/>
+            </div>
+<!--             PARTNER -->
+                <div class="col-sm-3 col-md-6 col-lg-3 ">
+       <img src="img/partner_4.svg" alt="California Afterchool Network" class="img-fluid" />
+              <h3 class="mt-3">California Afterchool Network</h3>
+              <p class="fs-6 text-start">Thanks to the California Afterschool Network, we're able to host weekly floriculture workshops during the spring semester at local public schools. Students learn about California's floral industry in addition to participating in creative floral design activities.</p>
+                  <br/>
+            </div>
+          </div><!--           END OF ROW -->
+        </div>
+      </section>
     </main>
     <footer class="p-5 bg-dark text-light">
       <div class="container">
         <div class="row">
+<!--           COLUMN -->
 <div class="col-sm col-md col-lg mb-3">
   <h4 class="text-info">Visit.</h4>
   <p>Kaylee’s Flowers<br/>
@@ -54,26 +115,28 @@ Woodland Hills, CA 91426<br/>
 kayleesflowers@gmail.com<br/>
 (818) 555-0159</p>
       </div>
+<!--           COLUMN -->
         <div class="col-sm col-md col-lg mb-3">
           <h4 class="text-info">Links.</h4>
 <a href="index.html" class="link-light">Home</a><br/>
           <a href="about.html" class="link-light">About</a><br/>
           <a href="shop.html" class="link-light">Shop</a><br/>
+          <a href="more facts.html" class="link-light">More Facts</a><br/>
           <a href="contact.html" class="link-light">Contact</a>
-          
         </div>
+<!--           COLUMN -->
          <div class="col-sm col-md col-lg mb-3">
         <h4 class="text-info">Stay in touch.</h4>
+           		<i class="bi bi-twitter fs-3 me-2"></i>
+		<i class="bi bi-instagram fs-3 me-2"></i>
+		<i class="bi bi-facebook fs-3 me-2"></i>
+                   <h6 class="text-info my-3">Subscribe to our monthly newsletter</h6>
            <div class="input-group mb-3">
   <input type="text" class="form-control" placeholder="email@example.com">
   <button class="btn btn-info btn-small" type="button" id="button-addon2">Subscribe</button>
 </div>
-
-		<i class="bi bi-twitter fs-3 me-2"></i>
-		<i class="bi bi-instagram fs-3 me-2"></i>
-		<i class="bi bi-facebook fs-3 me-2"></i>
     </div>
-        </div>
+        </div><!--         END OF ROW -->
     </footer>
 <!--     BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
